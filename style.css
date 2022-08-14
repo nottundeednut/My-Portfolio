@@ -1,7 +1,7 @@
 /* variables */
 :root {
     --primary: #E9C46A;
-    --secondary: #2A9D8F;
+    --secondary: #264653;
 }
 
 /* reset */
@@ -48,6 +48,29 @@ input,textarea{
 }
 
 /* fonts */
+@font-face{
+    font-family: 'DynaPuff';
+    src: url(./assets/fonts/DynaPuff-VariableFont_wdth\,wght.ttf);
+}
+h1,h2,h3,h4{
+    color: #F4A261;
+    font-weight: normal;
+}
+p,a,li{
+    color: #ffffff;
+}
+h1,h3{
+    font-size: 1.2em;
+}
+h2{
+    font-size: 1.6em;
+}
+h4{
+    font-size: 1.1em;
+}
+.leading{
+    font-size: 1.1em;
+}
 
 /* mobile styles */
 
@@ -55,7 +78,15 @@ input,textarea{
 @media sreen and (min-width: 620px) {}
 
 /* large tablet & laptop styles */
-@media sreen and (min-width: 960px) {}
+@media sreen and (min-width: 960px) {
+    body{
+        font-size: 18px;
+    }
+}
 
 /* desktop styles */
-@media sreen and (min-width: 1200px) {}
+@media sreen and (min-width: 1200px) {
+    body{
+        font-size: 20px;
+    }
+}
