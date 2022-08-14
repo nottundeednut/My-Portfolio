@@ -23,6 +23,7 @@ li {
 body {
     background: var(--secondary);
     overflow-x: hidden;
+    font-family: 'DynaPuff';
 }
 
 .button {
@@ -73,6 +74,36 @@ h4{
 }
 
 /* mobile styles */
+.grid{grid-template-columns: repeat(8, 1fr);
+    display: grid;
+}
+.site-nav{
+    margin: 0 20px;
+}
+.site-nav h1{
+   grid-column: 1/4;
+   grid-row: 1;
+   padding-bottom: 10px;
+   border-bottom: 3px solid var(--primary); 
+}
+.site-nav ul{
+    display: none;
+}
+#welcome{
+    padding: 0 20px 20px 20px;
+}
+.welcome-text{
+    grid-column: 1/6;
+}
+.welcome-text a{
+    margin: 20px 0;
+}
+.welcome-img{
+    grid-column: 6/9;
+}
+.welcome-img img{
+    width: 100%;
+}
 
 /* small tablet styles */
 @media sreen and (min-width: 620px) {}
